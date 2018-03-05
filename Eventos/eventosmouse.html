@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8">
+	<title>Eventos -  Mouse</title>
+	<!--Jquery 2.2.0 CDN Min-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<script type="text/javascript">
+		//.click -> Clicar no Mouse
+		//.dblclick -> Clique duplo
+		//.mousedown -> Clique independe de soltar o botão
+		//.mouseover -> acionado quando o cursor sobrepõe um elemento da página
+		//.mouseout -> acionado quando o cursor sai da área de um elemento selecionado da página
+
+
+		$(document).ready(function(){
+
+			$('#div1').mouseover( function(){
+				alert('Você passou o Mouse sobre  a div');
+			});
+
+		});//Modo correto de usar o Html Dom 
+
+
+		// function msg(){
+		// 	alert('Você Clicou no Mouse');
+		// }
+	</script>
+ 
+</head>
+<body>
+	<div id="div1" style="background: #ccc; width: 200px; height: 200px;">
+		
+	</div>
+</body>
+</html>

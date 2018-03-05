@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8">
+	<title>Eventos -  Teclado</title>
+	<!--Jquery 2.2.0 CDN Min-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<script type="text/javascript">
+		//.focus -> acionado quando o elemento recebe o foco do cursor
+		//.blur -> acionado quando elemento perde o foco do cursor
+		//.change -> acionado quando o elemento é modificado
+		
+
+
+		$(document).ready(function(){
+
+			$('#input').focus( function(){
+				alert('você  acionou o campo do formulário');
+			});
+		});
+
+		// $(document).ready(function(){
+
+		// 	$('#input').keydown( function(){
+		// 		alert('você teclou');
+		// 	});
+
+		// });//Modo correto de usar o Html Dom 
+
+
+		// function msg(){
+		// 	alert('Você Clicou no Mouse');
+		// }
+	</script>
+ 
+</head>
+<body>
+	<input id="input" style="height: 22px; width:150px; border-color: green; border-radius: 5px;" type="text" name="" placeholder="digite vai caraio">
+		
+	</div>
+</body>
+</html>

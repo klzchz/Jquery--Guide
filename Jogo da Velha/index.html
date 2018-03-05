@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<!--Jquery 2.2.1 no arquivo-->
+		<script src="jquery-2.2.1.js"></script>
+		<!--Inclusão do arquivo jogo-->
+		<script src="jogo.js"></script>
+	</head>
+
+	<body>
+		<div id="pagina_incial" align="center">
+			<table border="0" width="600px">
+				<tbody>
+					<tr>
+						<!--Titulo-->
+						<td colspan="3" align="center">JOGO DA VELHA</td>
+					</tr>
+					<!-- Parte 2 Imagens-->
+					<tr>
+						<!-- Imagens - Jogador 1-->
+						<td align="center">
+							<img src="imagens/jogador_1.png"/>
+							<br/>
+							<input id="entrada_apelido_1" type="text" maxlength="10" placeholder="Digite seu Nome" style="border:0px; text-align: center; color: red; " />
+						</td align="center">
+						<!--Imagem central Iniciar Jogo-->
+						<td align="center">
+							<img id="btn_iniciar_jogo" src="imagens/iniciar.png"/>
+						</td>
+						<!-- Imagens - Jogador 2-->
+						<td align="center">
+							<img src="imagens/jogador_2.png"/>
+							<br/>
+							<input id="entrada_apelido_2" type="text" maxlength="10" placeholder="Digite seu Nome" style="border:0px; text-align: center; color: blue;" />
+						</td align="center">	
+					</tr>
+					<!--fim parte 2-->
+				</tbody>
+			</table>
+		</div><!--FIM DIV Pagina Inicial-->
+
+
+		<!--Divisão entre a parte 1 e 2-->
+
+		<div id="palco_jogo" style=" display: none; margin-top: 50px; text-align: center;">
+			<!--Img Jogador 1-->
+			<div style=" display: inline-block;">
+				<img src="imagens/jogador_1.png"/>
+				<br/>
+				<span style="color:red;" id="nome_jogador_1"></span>
+			</div>
+			<!---->
+			<div style="display: inline-block;">
+				<table border="0">
+					<!-- 1 Linha 3 colunas-->
+					<tr>
+						<td style="border-bottom:1px solid red; border-right: 1px solid red; ">
+							<div class="jogada" id="a-1" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td  style="border-bottom:1px solid red; border-right: 1px solid red;">
+							<div class="jogada" id="a-2" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td style="border-bottom:1px solid red;">
+							<div class="jogada" id="a-3" style="width: 100px;height: 100px;"></div>
+						</td>
+					</tr>
+					<!-- 1 Linha 3 colunas-->
+					<tr>
+						<td style="border-bottom:1px solid red; border-right: 1px solid red;">
+							<div class="jogada" id="b-1" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td style="border-bottom:1px solid red; border-right: 1px solid red;">
+							<div class="jogada" id="b-2" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td style="border-bottom:1px solid red;">
+							<div class="jogada" id="b-3" style="width: 100px;height: 100px;"></div>
+						</td>
+					</tr>
+					<!-- 1 Linha 3 colunas-->
+					<tr>
+						<td style=" border-right: 1px solid red;">
+							<div class="jogada" id="c-1" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td style=" border-right: 1px solid red;">
+							<div class="jogada" id="c-2" style="width: 100px;height: 100px;"></div>
+						</td>
+
+						<td style="">
+							<div class="jogada" id="c-3" style="width: 100px;height: 100px;"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--Img Jogador 2-->
+			<div style="display: inline-block;">
+				<img src="imagens/jogador_2.png"/>
+				<br/>
+				<span style="color: blue;" id="nome_jogador_2"></span>
+			</div>
+		</div><!--FIM Palco Jogo-->
+
+	</body>
+</html>

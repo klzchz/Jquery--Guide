@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8">
+	<title>Eventos -  Teclado</title>
+	<!--Jquery 2.2.0 CDN Min-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<script type="text/javascript">
+		//.keydown -> aciona quando você pressiona a tecla do mouse soltando ou não
+		//.keypress -> aciona no momento do pressionamento da tecla mas nao usa todas as teclas 
+		//.keyup -> aciona no momento que você solta a tecla
+		
+
+
+		$(document).ready(function(){
+
+			$('#input').keydown( function(){
+				alert('você teclou');
+			});
+
+		});//Modo correto de usar o Html Dom 
+
+
+		// function msg(){
+		// 	alert('Você Clicou no Mouse');
+		// }
+	</script>
+ 
+</head>
+<body>
+	<input id="input" style="height: 22px; width:150px; border-color: red; border-radius: 5px;" type="text" name="" placeholder="digite vai caraio">
+		
+	</div>
+</body>
+</html>
